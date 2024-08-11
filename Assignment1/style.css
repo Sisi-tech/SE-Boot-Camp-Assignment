@@ -1,0 +1,206 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(230, 240, 249, 0.5);
+}
+
+/* nav bar */
+nav {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    
+}
+.navbar_img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: right;
+}
+.navbar p, .navbar h2, .navbar i {
+    position: absolute;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+.navbar p {
+    top: 60px;
+    left: 20px;
+}
+.navbar h2 {
+    top: 120px;
+    left: 20px;
+}
+.navbar i {
+    right: 14px;
+    top: 14px;
+}
+
+/* main */
+main {
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+/* intro_row */
+section {
+    width: 100%;
+    padding: 0 60px;
+}
+.main-title {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 32px;
+}
+.desc {
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.desc-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+.outcomes {
+    padding-left: 40px;
+    padding-top: 20px;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.intro-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 20px 0 20px 0;
+}
+.intro-card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    gap: 20px;
+    box-shadow: 1px 1px 4px gray;
+}
+.intro-card:hover {
+    scale: calc(105%)
+}
+.intro-img {
+    width: 100%;
+    height: auto;
+}
+.intro-card h3 {
+    padding-left: 10px;
+}
+.intro-card ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    margin: 0;
+    font-size: 18px;
+}
+.intro-card .button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.read-more-btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 120px;
+    font-size: 16px;
+    border-radius: 14px;
+    box-shadow: 2px 2px 4px gray;
+}
+.read-more-btn:hover {
+    background-color: rgb(101, 14, 155, 0.7);
+    color: white;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(208, 217, 225);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+footer ul li {
+    list-style: none;
+    font-size: 30px;
+    text-shadow: 1px 1px 3px rgb(79, 73, 73);
+}
+footer ul {
+    display: flex;
+    gap: 20px;
+}
+footer ul a i:hover {
+    color:rgb(79, 73, 73);
+    font-size: 32px;
+}
+a.organization {
+    text-decoration: none;
+    color: black;
+}
+a.organization:hover {
+    color: rgb(101, 14, 155, 0.7);
+}
+
+/* different screen size */
+@media screen and (max-width: 1024px) and (min-width: 790px) {
+    .intro-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .intro-card {
+        padding: 20px;
+    }
+    .read-more-btn {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .main-title {
+        font-size: 28px;
+    }
+    .intro-row {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 10px;
+    }
+    .intro-card {
+        padding: 15px;
+    }
+    .read-more-btn {
+        width: 140px;
+        font-size: 14px;
+    }
+    .navbar p, .navbar h2 {
+        font-size: 16px;
+        padding: 5px;
+    }
+    .navbar i {
+        font-size: 20px;
+        top: 10px;
+        right: 10px;
+    }
+}
+
