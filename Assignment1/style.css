@@ -46,6 +46,7 @@ nav {
 .navbar i {
     right: 14px;
     top: 14px;
+    background-color: transparent;
 }
 
 /* main */
@@ -140,6 +141,7 @@ footer {
     gap: 16px;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin-top: 30px;
 }
 footer ul li {
@@ -178,8 +180,19 @@ a.organization:hover {
 }
 
 @media screen and (max-width: 790px) {
+    .navbar p {
+        top: 200px;
+        font-size: 16px;
+    }
+    .navbar h2 {
+        top: 240px;
+        font-size: 16px;
+    }
+    section {
+        padding: 0 30px;
+    }
     .main-title {
-        font-size: 28px;
+        font-size: 24px;
     }
     .intro-row {
         grid-template-columns: 1fr;
@@ -187,7 +200,7 @@ a.organization:hover {
         padding: 10px;
     }
     .intro-card {
-        padding: 15px;
+        padding: 10px;
     }
     .read-more-btn {
         width: 140px;
@@ -198,9 +211,13 @@ a.organization:hover {
         padding: 5px;
     }
     .navbar i {
-        font-size: 20px;
+        font-size: 14px;
         top: 10px;
         right: 10px;
+        background-color: transparent;
+    }
+    footer p {
+        font-size: 14px;
     }
 }
 
