@@ -17,11 +17,18 @@ body {
 }
 
 /* nav bar */
-nav {
+.navbar {
     width: 100%;
     position: relative;
     overflow: hidden;
+    z-index: 10;
     
+}
+#menu {
+    background-color: rgb(60, 59, 56, 0.1);
+    border: none;
+    z-index: 11; 
+    position: relative;
 }
 .navbar_img {
     width: 100%;
@@ -29,24 +36,56 @@ nav {
     object-fit: cover;
     object-position: right;
 }
+.navbar_video {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: right;
+}
+
 .navbar p, .navbar h2, .navbar i {
     position: absolute;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 10px;
 }
 .navbar p {
     top: 60px;
     left: 20px;
+    animation-name: move-left;
+    animation-duration: 4s;
 }
 .navbar h2 {
     top: 120px;
     left: 20px;
+    animation-name: fade-in-out;
+    animation-duration: 10s;  
 }
+
 .navbar i {
     right: 14px;
     top: 14px;
     background-color: transparent;
+    font-size: 20px;
+    position: absolute;
+    z-index: 2;
+}
+.navbar i:hover {
+    color:rgba(0, 0, 0, 0.5);
+}
+
+@keyframes move-left {
+    0% {left: -320px;}
+    50% {left: 20px;}
+    100% {left: 30px;}
+}
+
+@keyframes fade-in-out {
+    0% { opacity: 0;}
+    50% { opacity: 50%;}
+    100% { opacity: 100%;}
 }
 
 /* main */
@@ -67,6 +106,7 @@ section {
     padding-bottom: 20px;
     font-size: 32px;
 }
+
 .desc {
     font-size: 18px;
     padding-bottom: 20px;
@@ -221,3 +261,18 @@ a.organization:hover {
     }
 }
 
+/* style for sign in page */
+#menu {
+    background-color: rgb(60, 59, 56, 0.1);
+    border: none;
+}
+#menu a {
+    display: block;
+    padding: 8px 0;
+    color: white;
+    text-align: center;
+    background-color: rgba(206, 193, 151, 0.538);
+}
+#menu a:hover {
+    color: rgb(88, 82, 26);
+}

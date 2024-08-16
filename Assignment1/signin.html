@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SE Boot Camp Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="navbar">
+        <p>WE WORK HARD, WE ENJOY LEARNING</p>
+        <h2>We Build Web Applications</h2>
+        <i class="fa-solid fa-bars" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu"></i>
+        <div style="position: absolute; right: 10px; top: 60px;" class="text-center">
+            <div class="collapse card p-1" id="menu">
+                <a class="p-2" style="width: 80px; text-decoration: none;" href="./index.html">Home</a>
+                <a class="p-2" style="width: 80px; text-decoration: none;" href="./about.html">About </a>
+                <a class="p-2" style="width: 80px; text-decoration: none;" href="./project.html">Project </a>
+                <a class="p-2" style="width: 80px; text-decoration: none;" href="./signin.html">Log In </a>
+            </div>
+        </div>
+        <img src="./assets/study09.jpg" alt="navbar-img" class="navbar_img"/>
+    </div>
+    <main>
+        <div class="container text-center bg-light p-4 fs-5">
+            <div class="row mb-4 justify-content-center g-3 p-4">
+                <div class="col-12 col-md-3 d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-primary w-100" data-bs-toggle="collapse" data-bs-target="#signup" role="button" aria-expanded="false" aria-controls="signup">
+                        Sign Up
+                    </button> 
+                </div>
+                <div class="col-12 col-md-3 d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-primary w-100" data-bs-toggle="collapse" data-bs-target="#sign_in" role="button" aria-expanded="false" aria-controls="sign_in">
+                        Log In
+                    </button>
+                </div>
+            </div>
+
+            <div class="accordion p-4" id="authForms">
+                <div class="accordion-item">
+                    <div class="collapse" id="signup" data-bs-parent="#authForms">
+                        <form class="row g-3 p-4">
+                            <fieldset class="p-4 text-center fs-2">Sign Up for Free</fieldset>
+                            <div class="row">
+                                <div class="col-md-6 text-start mb-3">
+                                    <label class="form-label px-1">First Name*</label>
+                                    <input type="text" id="first-name" name="first-name" class="form-control" placeholder="First name"/>
+                                </div>
+                                <div class="col-md-6 text-start mb-3">
+                                    <label class="form-label px-1">Last Name*</label>
+                                    <input type="text" id="last-name" name="last-name" class="form-control" placeholder="Last name" />
+                                </div>
+                            </div>
+                            <div class="text-start mb-3">
+                                <label class="form-label px-1">Email*</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Email" />
+                            </div>
+                            <div class="text-start mb-3">
+                                <label class="form-label px-1">Set a Password*</label>
+                                <input type="text" id="password" name="password" class="form-control" placeholder="Password"/>
+                            </div>
+                            <div class="text-start mb-3">
+                                <label class="form-label px-1">Confirm Your Password*</label>
+                                <input type="text" id="confirm-password" name="confirm-password" class="form-control" placeholder="Confirm your password"/>
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-4 mb-4" >Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div id="sign_in" data-bs-parent="#authForms">
+                        <form class="row g-3 p-4">
+                            <fieldset class="p-4 text-center fs-2">Sign In</fieldset>
+                            <div class="row">
+                                <div class="row">
+                                    <div class="text-start mb-3">
+                                        <label class="form-label px-1">Email*</label>
+                                        <input type="text" id="email" name="email" class="form-control" placeholder="Email" />
+                                    </div>
+                                    <div class="text-start mb-3">
+                                        <label class="form-label px-1">Password*</label>
+                                        <input type="text" id="password" name="password" class="form-control" placeholder="Password" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <button type="submit" class="btn btn-primary mt-4 mb-4">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <p class="pt-4">BOOT CAMP FROM <a href="https://www.qcc.cuny.edu/contEd/tech-force.html" class="organization">QUEENSBOROUGH COMMUNITY COLLEGE</a></p> 
+         <p>Continuing Education & Workforce Development</p>
+         <ul class="icons">
+             <li><a href="mailto:sisiwang242@gmail.com" class="icon"><i class="fas fa-envelope"></i></a></li>
+             <li><a href="https://www.linkedin.com/in/sisiwang242/" class="icon" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+             <li><a href="https://github.com/Sisi-tech" class="icon" target="_blank"><i class="fab fa-github"></i></a></li>
+             <li><a href="https://x.com/SisiWang242" class="icon" target="_blank"><i class="fab fa-twitter"></i></a></li>
+             <li><a href="https://medium.com/@sisiwang242" class="icon" target="_blank"><i class="fab fa-medium-m"></i></a></li>
+         </ul>
+     </footer>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
