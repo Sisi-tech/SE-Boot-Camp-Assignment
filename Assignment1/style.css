@@ -73,7 +73,7 @@ body {
     z-index: 2;
 }
 .navbar i:hover {
-    color:rgba(0, 0, 0, 0.5);
+    color:rgba(99, 99, 21, 0.9);
 }
 
 @keyframes move-left {
