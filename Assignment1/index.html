@@ -159,20 +159,148 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Bootstrap modal window 2  -->
                 </div>
+
+                <!-- Bootstrap modal window 2 -->
                 <div class="intro-card">
                     <img src="./assets/study02.jpg" alt="Python Programming" class="intro-img"/>
                     <h3>Python Programming</h3>
                     <ul>
-                        <li>Python fundamentals</li>
-                        <li>Review Python</li>
+                        <li>Variables and Data Types, basic operators, strings, lists, tuples, dictionaries, and conditional statements</li>
+                        <li>Loops(for, while), functions, lambda expressions, exception handling</li>
+                        <li>Object-Oriented Programming (OOP) in Python. Classes and Objects, inheritance, modules and packages</li>
                     </ul>
-                    <div class="button-wrapper">
-                        <button class="read-more-btn">More</button>
+                    <!-- Bootstrap modal window 1 with header, body, footer. add close button-->
+                    <div class="button-wrapper" id="modal_window_two">
+                        <button type="button" class="read-more-btn" data-bs-toggle="modal" data-bs-target="#card_two">More</button>
+                        <div class="modal fade" id="card_two" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered" >
+                                <div class="modal-content" >
+                                    <!-- modal header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="modalLabel">Introduction to program</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <!-- modal body -->
+                                    <div class="modal-body row g-2 px-2">
+                                        <div class="row g-2 px-2 mb-4">
+                                            <div class="col g-4 px-4">
+                                                <h5 class="mb-2">Python Fundamentals Review– Part 1</h5>
+                                                <ul>
+                                                    <li>Variables and Data Types</li>
+                                                    <li>Basic Operators</li>
+                                                    <li>Strings</li>
+                                                    <li>Lists, Tuples, and Dictionaries</li>
+                                                    <li>Conditional Statements (if, elif, else)</li>
+                                                </ul>
+
+                                                <h5 class="mb-2 mt-2">Python Fundamentals Review– Part 2</h5>
+                                                <ul>
+                                                    <li>Loops (for, while)</li>
+                                                    <li>Functions and Lambda Expressions</li>
+                                                    <li>Exception Handling</li>
+                                                    <li>File Handling</li>
+                                                </ul>
+
+                                                <h5 class="mb-2 mt-2">Python Fundamentals Review– Part 3</h5>
+                                                <ul>
+                                                    <li>Object-Oriented Programming (OOP) in Python</li>
+                                                    <li>Classes and Objects</li>
+                                                    <li>Inheritance and Polymorphism</li>
+                                                    <li>Modules and Packages</li>
+                                                </ul>
+                                                <h5 class="mt-4">Course Fee without Scholarship: <span class="introduction_class_fee">$2000</span></h5>
+                                            </div>
+                                            <div class="col"> 
+                                                <video autoplay muted loop width="100%" height="500px" class="model_two_video">
+                                                    <source src="./assets/video5.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
+                                        </div>
+                                        <!-- modal footer -->
+                                        <div class="modal-footer justify-content-center">
+                                            <button type="button" class="btn btn-secondary" id="scholarship_btn_two" data-bs-toggle="modal" data-bs-target="#scholarship">Apply for a Scholarship</button>
+                                            <button type="button" class="btn btn-secondary" id="add_to_cart_btn_two" data-bs-dismiss="modal">Add to Cart</button>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nested modal for scholarship -->
+                    <div class="modal fade" id="scholarship_modal_window_two" tabindex="-1" aria-labelledby="modalLabel4" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="modalLabel4">ACE Scholarship - Python fundamentals</h4>
+                                    <button type="button" class="btn-close cancel_scholarship_two" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body row g-2 px-4">
+                                    <div class="row g-2 px-2 mb-4">
+                                        <p>QCC offers scholarships to qualifying students in the Division of Adult and Continuing Education (ACE) who may be facing financial hardship that disrupts studies and training.</p>
+                                        <p>The ACE Scholarship provides partial tuition assistance to help you achieve your educational and career goals.</p>
+                                        <h5>Course Fee without ACE Scholarship: $2000</h5>
+                                        <h5>With ACE Scholarship - Student Course Fee Responsibility: $0</h5>
+                                        <h5>Eligibility:</h5>
+                                        <ul>
+                                            <li>You must be over 18 years old.</li>
+                                            <li>You must demonstrate Engineering need</li>
+                                            <li>You must live in the US area</li>
+                                        </ul>
+                                        <p>You may receive more than one ACE Scholarship per year as long as you have not exceeded the annual or lifetime cap amount.</p>
+                                        <div>
+                                            <h5 class="text-danger fst-italic">APPLICATION WILL CLOSE SOON</h5>
+                                            <div class="row mb-4">
+                                                <div class="col">
+                                                    <p>Status</p>
+                                                    <p>Course Code</p>
+                                                    <p>Session</p>
+                                                    <p>Category</p>
+                                                    <p>Course</p>
+                                                    <p>Fee(s)</p>
+                                                </div>
+                                                <div class="col">
+                                                    <p>Registration Available</p>
+                                                    <p> ACES301E24</p>
+                                                    <p>Fall 2024</p>
+                                                    <p>Technology</p>
+                                                    <p>Python fundamentals</p>
+                                                    <p>Free</p>
+                                                </div>
+                                            </div>
+                                            <form id="scholarship_form_two" class="border p-4 row g-2">
+                                                <div class="row g-2">
+                                                    <label for="first_name">First Name*</label>
+                                                    <input class="" type="text" id="first_name" name="first_name" required placeholder="First name" />
+                                                </div>
+                                                <div class="row g-2">
+                                                    <label for="last_name">Last Name*</label>
+                                                    <input class="p-1" type="text" id="last_name" name="last_name" required placeholder="Last name" />
+                                                </div>
+                                                <div class="row g-2">
+                                                    <label for="email">Email*</label>
+                                                    <input class="p-1" type="email" id="email" name="email" required placeholder="Email" />
+                                                </div>
+                                                <div class="row g-2">
+                                                    <label for="phone_number">Phone Number*</label>
+                                                    <input class="p-1" type="text" id="phone_number" name="phone_number" optional placeholder="Phone Number" />
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer justify-content-center">
+                                        <button type="submit" form="scholarship_form_two" class="btn btn-secondary" id="apply_scholarship_btn_two" data-bs-dismiss="modal">Apply</button>
+                                        <button type="button" class="btn btn-secondary cancel_scholarship_two"  data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Bootstrap modal window3-->
                 <div class="intro-card">
                     <img src="./assets/design02.jpg" alt="JavaScript Fundamentals" class="intro-img"/>
                     <h3>JavaScript Fundamentals</h3>
@@ -181,8 +309,127 @@
                         <li>JavaScript as Object Oriented Programming</li>
                         <li>DOM, event handlers</li>
                     </ul>
-                    <div class="button-wrapper">
-                        <button class="read-more-btn">More</button>
+                    <!-- Bootstrap modal window 3 with header, body, footer. -->
+                    <div class="button-wrapper" id="modal_window_three">
+                        <button type="button" class="read-more-btn" data-bs-toggle="modal" data-bs-target="#card_three">More</button>
+                        <div class="modal fade" id="card_three" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="modalLabel">JavaScript Fundamentals</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <!-- modals body -->
+                                    <div class="modal-body row g-2 px-2">
+                                        <div class="row px-2 mb-4">
+                                            <div class="col g-2 px-4">
+                                                <h5 class="mb-2">JavaScript Fundamentals Review– Part1</h5>
+                                                <ul>
+                                                    <li>Variables, operators</li>
+                                                    <li>Strings</li>
+                                                    <li>Arrays, Object, etc.</li>
+                                                    <li>Conditional statement</li>
+                                                </ul>
+                                                <h5 class="mb-2 mt-2">JavaScript Fundamentals Review– Part2</h5>
+                                                <ul>
+                                                    <li>Loops</li>
+                                                    <li>Functions</li>
+                                                    <li>Class Activity 3</li>
+                                                </ul>
+                                                <h5 class="mb-2 mt-2">JavaScript Fundamentals Review– Part3</h5>
+                                                <ul>
+                                                    <li>JavaScript as Object Oriented Programming</li>
+                                                    <li>DOM</li>
+                                                    <li>Event handlers</li>
+                                                </ul>
+                                                <h5 class="mt-4">Course Fee without Scholarship: <span class="introduction_class_fee">$1299</span></h5>
+                                            </div>
+                                            <div class="col"> 
+                                                <video autoplay muted loop width="100%" height="500px" class="model_three_video">
+                                                    <source src="./assets/video4.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
+                                        </div>
+                                        <!-- modal3 footer -->
+                                        <div class="modal-footer justify-content-center">
+                                            <button type="button" class="btn btn-secondary" id="scholarship_btn_three" data-bs-toggle="modal" data-bs-target="#scholarship_three">Apply for a scholarship</button>
+                                            <button type="button" class="btn btn-secondary" id="add_to_cart_btn_three" data-bs-dismiss="modal">Add to Cart</button>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nested modal for scholarship 3-->
+                    <div class="modal fade" id="scholarship_modal_window_three" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="modalLabel3">ACE Scholarship - JavaScript Fundamentals</h4>
+                                    <button type="button" class="btn-close cancel_scholarship_three" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body row g-2 px-4">
+                                    <div class="row g-2 px-2 mb-4">
+                                        <p>QCC offers scholarships to qualifying students in the Division of Adult and Continuing Education (ACE) who may be facing financial hardship that disrupts studies and training.</p>
+                                        <p>The ACE Scholarship provides partial tuition assistance to help you achieve your educational and career goals.</p>
+                                        <h5>Course Fee without ACE Scholarship: $1299</h5>
+                                        <h5>With ACE Scholarship - Student Course Fee Responsibility: $0</h5>
+                                        <h5>Eligibility:</h5>
+                                        <ul>
+                                            <li>You must be over 18 years old.</li>
+                                            <li>You must demonstrate Engineering need</li>
+                                            <li>You must live in the US area</li>
+                                        </ul>
+                                        <p>You may receive more than one ACE Scholarship per year as long as you have not exceeded the annual or lifetime cap amount.</p>
+                                        <div>
+                                            <h5 class="text-danger fst-italic">APPLICATION WILL CLOSE SOON</h5>
+                                            <div class="row mb-4">
+                                                <div class="col">
+                                                    <p>Status</p>
+                                                    <p>Course Code</p>
+                                                    <p>Session</p>
+                                                    <p>Category</p>
+                                                    <p>Course</p>
+                                                    <p>Fee(s)</p>
+                                                </div>
+                                                <div class="col">
+                                                    <p>Registration Available</p>
+                                                    <p> ACES301E25</p>
+                                                    <p>Fall 2024</p>
+                                                    <p>Technology</p>
+                                                    <p>JavaScript Fundamentals</p>
+                                                    <p>Free</p>
+                                                </div>
+                                            </div>
+                                            <form id="scholarship_form_three" class="border p-4 row g-2">
+                                                <div class="row g-2">
+                                                    <label for="first_name">First Name*</label>
+                                                    <input class="" type="text" id="first_name" name="first_name" required placeholder="First name" />
+                                                </div>
+                                                <div class="row g-2">
+                                                    <label for="last_name">Last Name*</label>
+                                                    <input class="p-1" type="text" id="last_name" name="last_name" required placeholder="Last name" />
+                                                </div>
+                                                <div class="row g-2">
+                                                    <label for="email">Email*</label>
+                                                    <input class="p-1" type="email" id="email" name="email" required placeholder="Email" />
+                                                </div>
+                                                <div class="row g-2">
+                                                    <label for="phone_number">Phone Number*</label>
+                                                    <input class="p-1" type="text" id="phone_number" name="phone_number" optional placeholder="Phone Number" />
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer justify-content-center">
+                                        <button type="submit" form="submit_scholarship_form_three" class="btn btn-secondary" id="apply_scholarship_btn_three" data-bs-dismiss="modal">Apply</button>
+                                        <button type="button" class="btn btn-secondary cancel_scholarship_three"  data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
